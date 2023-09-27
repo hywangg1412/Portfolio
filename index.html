@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+        <div class="container">
+                <nav>
+                        <img src="anh/hywang-low-resolution-logo-white-on-transparent-background.png" class="logo">
+                        <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">Contact</a></li>
+                        </ul>
+                </nav>
+                <div class="header-text">
+                        <p>Backend Developer</p>
+                        <h1>Hi, I'm <span>Quang Huy</span> From VietNam</h1>
+                </div>
+        </div>
+
+</div>
+<!-----------PHAN ABOUT ME-------------->
+<div id="about">
+        <div class="container">
+                <div class="row">
+                        <div class="about-col-1">
+                                <img src="anh/me1.jpg">
+                        </div>
+                        <div class="about-col-2">
+                                <h1 class="sub-titles">About Me</h1>
+                                <p>
+                                        Im dedicated to developing and programming app and software. 
+                                        Throughout 0 year plus career as a software developer. I have focused on developing scalable and well-documented code. 
+                                        I enjoy working collaboratively but can ao run projects independently.
+                                </p>
+                                <div class="tab-titles">
+                                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                                </div>
+                                <div class="tab-contents active-tab" id="skills">
+                                        <ul>
+                                                <li><span>Backend</span><br>Developer Web/App</li>
+                                                <li><span>Web Development</span><br>Web/App Development</li>
+                                                <li><span>Software Development</span><br>Building Apps</li>
+                                        </ul>
+                                </div>
+                                <div class="tab-contents" id="experience">
+                                        <ul>
+                                                <li><span>9/2023 - Current</span><br>GDSC Universities of Technology and Science Members</li>
+                                                
+                                </div>
+                                <div class="tab-contents" id="education">
+                                        <ul>
+                                                <li><span>2022 - 2026</span><br>FPT Universities </li>
+                                                <li><span>2019 - 2022</span><br>Thai Phien Highshcool</li>
+                                        </ul>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</div>
+
+<!------SERVICES------------------->
+<div id="services">
+        <div class="container">
+                <h1 class="sub-titles">My Services</h1>
+                <div class="services-list">
+                        <div>
+                                <h2>Custom Development</h2>
+                                <p> Looking for a backend company to implement your business idea? Contact us for a bespoke back-end infrastructure. Upgrade, enhance, or migrate your back-ends at speed and affordable costs.</p>
+                                <a href="#">Learn more</a>
+                        </div>
+                        <div>
+                                <h2>Cloud Back-End Solutions
+                                </h2>
+                                <p>Our back-end systems handle heavy loads and scale up and down, eliminating latency issues. We also implement cutting-edge functionality to deliver innovative products to the end user.</p>
+                                <a href="#">Learn more</a>
+                        </div>
+                        <div>
+                                <h2>Mobile App Back-End Development</h2>
+                                <p>Our back-end systems handle heavy loads and scale up and down, eliminating latency issues. We also implement cutting-edge functionality to deliver innovative products to the end user.</p>
+                                <a href="#">Learn more</a>
+                        </div>
+
+                </div>
+
+        </div>
+</div>
+
+
+
+
+
+
+
+<!---ANIMATION CUA ABOUT ME-->
+<script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+                for(tablink of tablinks){
+                        tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                        tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+        }
+</script>
+
+
+
+</body>
+<html></html>
